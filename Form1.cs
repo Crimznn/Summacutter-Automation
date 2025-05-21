@@ -89,6 +89,8 @@ namespace Rutland.PrintFileMaker
             this.pnlTop.Controls.Clear();
             this.pnl5x5Top.Controls.Clear();
             this.pnl5x5Bottom.Controls.Clear();
+            this.pnlTopRoulette.Controls.Clear();
+            this.pnlBottomRoulette.Controls.Clear();
             
             this.ImageFiles = new List<FilePicker>();
 
@@ -168,8 +170,18 @@ namespace Rutland.PrintFileMaker
         {
             PnlBottomStartPoint = new Point(4, 4);
             PnlTopStartPoint = new Point(4, 4);
-            this.addFilePickerToTop(top, new Range(1, 24), new Range(49, 72));
-            this.addFilePickerToBottom(bottom, new Range(25, 48), new Range(73, 96));
+            switch (LayoutType)
+            {
+                case LayoutType.NewRoulette:
+                    this.addFilePickerToTop(top, new Range(1, 48), new Range(1, 48));
+                    this.addFilePickerToBottom(bottom, new Range(49, 96), new Range(49, 96));
+                    break;
+
+                default:
+                    this.addFilePickerToTop(top, new Range(1, 24), new Range(49, 72));
+                    this.addFilePickerToBottom(bottom, new Range(25, 48), new Range(73, 96));
+                    break;
+            }
         }
 
         private void showUniform(Panel top)
@@ -188,6 +200,10 @@ namespace Rutland.PrintFileMaker
 
                 case LayoutType.FiveByFive:
                     this.addFilePickerToTop(top, new Range(1, 25), new Range(1, 25));
+                    break;
+
+                case LayoutType.NewRoulette:
+                    this.addFilePickerToTop(top, new Range(1, 96), new Range(97, 192));
                     break;
 
                 default:
