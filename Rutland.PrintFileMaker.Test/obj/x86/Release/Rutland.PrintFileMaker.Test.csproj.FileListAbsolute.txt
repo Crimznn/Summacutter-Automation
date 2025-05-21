@@ -1,0 +1,9 @@
+C:\Development\Projects\PrintFileMaker\Rutland.PrintFileMaker.Test\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Development\Projects\PrintFileMaker\Rutland.PrintFileMaker.Test\bin\Release\Rutland.PrintFileMaker.Test.exe
+C:\Development\Projects\PrintFileMaker\Rutland.PrintFileMaker.Test\bin\Release\Rutland.PrintFileMaker.Test.pdb
+C:\Development\Projects\PrintFileMaker\Rutland.PrintFileMaker.Test\bin\Release\PrintFileMaker.exe
+C:\Development\Projects\PrintFileMaker\Rutland.PrintFileMaker.Test\bin\Release\PrintFileMaker.pdb
+C:\Development\Projects\PrintFileMaker\Rutland.PrintFileMaker.Test\obj\x86\Release\Rutland.PrintFileMaker.Test.exe
+C:\Development\Projects\PrintFileMaker\Rutland.PrintFileMaker.Test\obj\x86\Release\Rutland.PrintFileMaker.Test.pdb
+C:\Development\Projects\PrintFileMaker\Rutland.PrintFileMaker.Test\bin\Release\App.config
+C:\Development\Projects\PrintFileMaker\Rutland.PrintFileMaker.Test\bin\Release\Rutland.PrintFileMaker.Test.exe.config
