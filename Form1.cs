@@ -525,6 +525,9 @@ namespace Rutland.PrintFileMaker
                     addFilePickerToTop(pnlTopRoulette, new Range(25, 48), new Range(25, 48));
                     addFilePickerToBottom(pnlBottomRoulette, new Range(49, 72), new Range(49, 72));
                     addFilePickerToBottom(pnlBottomRoulette, new Range(73, 96), new Range(73, 96));
+
+                    // default to Uniform style so controls display immediately
+                    this.CbLayoutStyleRoulette.SelectedIndex = 0;
                     break;
 
                 default:
