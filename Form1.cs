@@ -349,15 +349,30 @@ namespace Rutland.PrintFileMaker
                     sfd.InitialDirectory = Settings.DefaultPrintFileFolder;
 
                     ILayout layout;
-                                        
+
+                    bool doubleImages = (this.LayoutType == LayoutType.ThirdSheet && rbDoubleImages.Checked);
 
                     if (this.useSerialNumbers())
                     {
-                        layout = LayoutFactory.GetLayout(LayoutType, true);
+                        if (this.LayoutType == LayoutType.ThirdSheet)
+                        {
+                            layout = new ThirdSheet(true, doubleImages);
+                        }
+                        else
+                        {
+                            layout = LayoutFactory.GetLayout(LayoutType, true);
+                        }
                     }
                     else
                     {
-                        layout = LayoutFactory.GetLayout(LayoutType);
+                        if (this.LayoutType == LayoutType.ThirdSheet)
+                        {
+                            layout = new ThirdSheet(false, doubleImages);
+                        }
+                        else
+                        {
+                            layout = LayoutFactory.GetLayout(LayoutType);
+                        }
                     }
 
                     if (sfd.ShowDialog() == DialogResult.OK)
@@ -405,6 +420,12 @@ namespace Rutland.PrintFileMaker
 
                                 layout.AddImageToRange(imgFile.T1Start, imgFile.T1End, selectedFile);
                                 layout.AddImageToRange(imgFile.T2Start, imgFile.T2End, selectedFile);
+
+                                if (doubleImages)
+                                {
+                                    layout.AddImageToRange(imgFile.T1Start + 96, imgFile.T1End + 96, selectedFile);
+                                    layout.AddImageToRange(imgFile.T2Start + 96, imgFile.T2End + 96, selectedFile);
+                                }
                             }
 
                             //add serial numbers if necessary

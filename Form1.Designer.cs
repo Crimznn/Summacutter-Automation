@@ -39,6 +39,7 @@
             this.pnlTop = new System.Windows.Forms.Panel();
             this.CbLayoutStyle = new System.Windows.Forms.ComboBox();
             this.lblSelectTsLayout = new System.Windows.Forms.Label();
+            this.rbDoubleImages = new System.Windows.Forms.RadioButton();
             this.TabFiveByFive = new System.Windows.Forms.TabPage();
             this.TabNewRoulette = new System.Windows.Forms.TabPage();
             this.TabNewRoulette.Location = new System.Drawing.Point(4, 22);
@@ -103,6 +104,7 @@
             this.TabThirdSheet.Controls.Add(this.lblLayoutText);
             this.TabThirdSheet.Controls.Add(this.pnlUniformStyle);
             this.TabThirdSheet.Controls.Add(this.CbLayoutStyle);
+            this.TabThirdSheet.Controls.Add(this.rbDoubleImages);
             this.TabThirdSheet.Controls.Add(this.lblSelectTsLayout);
             this.TabThirdSheet.Location = new System.Drawing.Point(4, 22);
             this.TabThirdSheet.Name = "TabThirdSheet";
@@ -193,9 +195,21 @@
             this.lblSelectTsLayout.Size = new System.Drawing.Size(98, 13);
             this.lblSelectTsLayout.TabIndex = 0;
             this.lblSelectTsLayout.Text = "Select Layout Style";
-            // 
+            //
+            // rbDoubleImages
+            //
+            this.rbDoubleImages.AutoSize = true;
+            this.rbDoubleImages.Checked = true;
+            this.rbDoubleImages.Location = new System.Drawing.Point(260, 12);
+            this.rbDoubleImages.Name = "rbDoubleImages";
+            this.rbDoubleImages.Size = new System.Drawing.Size(109, 17);
+            this.rbDoubleImages.TabIndex = 2;
+            this.rbDoubleImages.TabStop = true;
+            this.rbDoubleImages.Text = "192 Image Mode";
+            this.rbDoubleImages.UseVisualStyleBackColor = true;
+            //
             // TabNewRoulette
-            // 
+            //
             this.TabNewRoulette.BackColor = System.Drawing.Color.WhiteSmoke;
             this.TabNewRoulette.Controls.Add(this.lblLayoutTextRoulette);
             this.TabNewRoulette.Controls.Add(this.pnlUniformStyleRoulette);
@@ -627,6 +641,7 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ComboBox CbLayoutStyle;
         private System.Windows.Forms.Label lblSelectTsLayout;
+        private System.Windows.Forms.RadioButton rbDoubleImages;
         private System.Windows.Forms.Panel pnlUniformStyle;
         private System.Windows.Forms.Label lblBottom;
         private System.Windows.Forms.Label lblTop;
