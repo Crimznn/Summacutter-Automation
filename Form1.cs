@@ -499,14 +499,14 @@ namespace Rutland.PrintFileMaker
                     CurrentBottomPanel = pnlBottomRoulette;
 
                     // Optional: clear old controls if needed
-                    this.pnlTop.Controls.Clear();
-                    this.pnlBottom.Controls.Clear();
+                    this.pnlTopRoulette.Controls.Clear();
+                    this.pnlBottomRoulette.Controls.Clear();
 
                     // Layout the 4x6 double stack
-                    addFilePickerToTop(pnlTop, new Range(1, 24), new Range(1, 24));
-                    addFilePickerToTop(pnlTop, new Range(25, 48), new Range(25, 48));
-                    addFilePickerToBottom(pnlBottom, new Range(49, 72), new Range(49, 72));
-                    addFilePickerToBottom(pnlBottom, new Range(73, 96), new Range(73, 96));
+                    addFilePickerToTop(pnlTopRoulette, new Range(1, 24), new Range(1, 24));
+                    addFilePickerToTop(pnlTopRoulette, new Range(25, 48), new Range(25, 48));
+                    addFilePickerToBottom(pnlBottomRoulette, new Range(49, 72), new Range(49, 72));
+                    addFilePickerToBottom(pnlBottomRoulette, new Range(73, 96), new Range(73, 96));
                     break;
 
                 default:
