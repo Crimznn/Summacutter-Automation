@@ -11,28 +11,30 @@ namespace Rutland.PrintFileMaker
     {
         private int ImageQty;
 
-        public ThirdSheet() : base(96)
+        public ThirdSheet() : this(false, false)
         {
-            this.ImageQty = 96;
         }
 
         public ThirdSheet(bool hasTextContent)
-            : base(96, 48)
+            : this(hasTextContent, false)
         {
-            this.ImageQty = 96;
+        }
+
+        public ThirdSheet(bool hasTextContent, bool doubleImages)
+            : base(doubleImages ? 192 : 96, hasTextContent ? 48 : 0)
+        {
+            this.ImageQty = doubleImages ? 192 : 96;
         }
 
 
         public override void Initialize()
         {
             _Images = new OrderedDictionary();
-            //_Images.Add("default", string.Empty);
 
             for (int i = 1; i <= ImageQty; i++)
             {
                 string newKey = string.Format(VARIABLE_KEY, i);
                 _Images.Add(newKey, base.DefaultImage);
-
             }
 
         }
