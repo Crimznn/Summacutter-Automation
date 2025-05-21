@@ -494,8 +494,10 @@ namespace Rutland.PrintFileMaker
 
         private void tabLayoutType_SelectedIndexChanged(object sender, EventArgs e)
         {
+            this.ClearAll();
             this.cmbSelect5x5Layout.SelectedIndex = -1;
             this.CbLayoutStyle.SelectedIndex = -1;
+            this.CbLayoutStyleRoulette.SelectedIndex = -1;
             this.LayoutType = (LayoutType)Enum.ToObject(typeof(LayoutType), tabLayoutType.SelectedIndex);
 
             switch (LayoutType)
@@ -523,6 +525,9 @@ namespace Rutland.PrintFileMaker
                     addFilePickerToTop(pnlTopRoulette, new Range(25, 48), new Range(25, 48));
                     addFilePickerToBottom(pnlBottomRoulette, new Range(49, 72), new Range(49, 72));
                     addFilePickerToBottom(pnlBottomRoulette, new Range(73, 96), new Range(73, 96));
+
+                    // default to Uniform style so controls display immediately
+                    this.CbLayoutStyleRoulette.SelectedIndex = 0;
                     break;
 
                 default:
