@@ -71,6 +71,11 @@ namespace Rutland.PrintFileMaker
             catch (Exception)
             {
                 MessageBox.Show("Please choose your application settings by clicking Edit --> Preferences from the menu bar.");
+
+                // fallback settings so the application remains usable
+                this.Settings = new PfmSettings();
+                this.DefaultImageFile = string.Empty;
+                this.lblDefaultImg.Text = string.Empty;
             }
             
             ClearAll();
@@ -494,8 +499,10 @@ namespace Rutland.PrintFileMaker
 
         private void tabLayoutType_SelectedIndexChanged(object sender, EventArgs e)
         {
+            this.ClearAll();
             this.cmbSelect5x5Layout.SelectedIndex = -1;
             this.CbLayoutStyle.SelectedIndex = -1;
+            this.CbLayoutStyleRoulette.SelectedIndex = -1;
             this.LayoutType = (LayoutType)Enum.ToObject(typeof(LayoutType), tabLayoutType.SelectedIndex);
 
             switch (LayoutType)
