@@ -71,6 +71,11 @@ namespace Rutland.PrintFileMaker
             catch (Exception)
             {
                 MessageBox.Show("Please choose your application settings by clicking Edit --> Preferences from the menu bar.");
+
+                // fallback settings so the application remains usable
+                this.Settings = new PfmSettings();
+                this.DefaultImageFile = string.Empty;
+                this.lblDefaultImg.Text = string.Empty;
             }
             
             ClearAll();
