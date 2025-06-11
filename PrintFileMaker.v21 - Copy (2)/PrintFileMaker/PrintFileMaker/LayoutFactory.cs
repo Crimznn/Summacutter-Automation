@@ -27,10 +27,10 @@ namespace Rutland.PrintFileMaker
             switch (lType)
             {
                 case LayoutType.ThirdSheet:
-                    return new ThirdSheet(true);
+                    return new ThirdSheet(hasSerialNumbers);
 
                 case LayoutType.FiveByFive:
-                    return new FiveByFive(true);
+                    return new FiveByFive(hasSerialNumbers);
 
                 default:
                     throw new Exception("Invalid Layout Type");

@@ -9,13 +9,14 @@ namespace Rutland.PrintFileMaker
 {
     public class ThirdSheet : Layout, ILayout
     {
-        private int ImageQty;        public ThirdSheet() : base(192)
+        private int ImageQty;
+
+        public ThirdSheet() : this(false)
         {
-            this.ImageQty = 192;
         }
 
         public ThirdSheet(bool hasTextContent)
-            : base(192, 96)
+            : base(192, hasTextContent ? 192 : 0)
         {
             this.ImageQty = 192;
         }
