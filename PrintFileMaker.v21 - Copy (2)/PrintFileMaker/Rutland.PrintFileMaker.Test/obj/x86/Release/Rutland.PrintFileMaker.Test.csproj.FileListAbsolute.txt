@@ -1,0 +1,21 @@
+C:\Development\Projects\PrintFileMaker\Rutland.PrintFileMaker.Test\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Development\Projects\PrintFileMaker\Rutland.PrintFileMaker.Test\bin\Release\Rutland.PrintFileMaker.Test.exe
+C:\Development\Projects\PrintFileMaker\Rutland.PrintFileMaker.Test\bin\Release\Rutland.PrintFileMaker.Test.pdb
+C:\Development\Projects\PrintFileMaker\Rutland.PrintFileMaker.Test\bin\Release\PrintFileMaker.exe
+C:\Development\Projects\PrintFileMaker\Rutland.PrintFileMaker.Test\bin\Release\PrintFileMaker.pdb
+C:\Development\Projects\PrintFileMaker\Rutland.PrintFileMaker.Test\obj\x86\Release\Rutland.PrintFileMaker.Test.exe
+C:\Development\Projects\PrintFileMaker\Rutland.PrintFileMaker.Test\obj\x86\Release\Rutland.PrintFileMaker.Test.pdb
+C:\Development\Projects\PrintFileMaker\Rutland.PrintFileMaker.Test\bin\Release\App.config
+C:\Development\Projects\PrintFileMaker\Rutland.PrintFileMaker.Test\bin\Release\Rutland.PrintFileMaker.Test.exe.config
+C:\Users\Timmy Diyaolu\Downloads\PrintFileMaker.v21\PrintFileMaker\Rutland.PrintFileMaker.Test\bin\Release\App.config
+C:\Users\Timmy Diyaolu\Downloads\PrintFileMaker.v21\PrintFileMaker\Rutland.PrintFileMaker.Test\bin\Release\Rutland.PrintFileMaker.Test.exe.config
+C:\Users\Timmy Diyaolu\Downloads\PrintFileMaker.v21\PrintFileMaker\Rutland.PrintFileMaker.Test\bin\Release\Rutland.PrintFileMaker.Test.exe
+C:\Users\Timmy Diyaolu\Downloads\PrintFileMaker.v21\PrintFileMaker\Rutland.PrintFileMaker.Test\bin\Release\Rutland.PrintFileMaker.Test.pdb
+C:\Users\Timmy Diyaolu\Downloads\PrintFileMaker.v21\PrintFileMaker\Rutland.PrintFileMaker.Test\bin\Release\PrintFileMakerv21.exe
+C:\Users\Timmy Diyaolu\Downloads\PrintFileMaker.v21\PrintFileMaker\Rutland.PrintFileMaker.Test\bin\Release\PrintFileMakerv21.pdb
+C:\Users\Timmy Diyaolu\Downloads\PrintFileMaker.v21\PrintFileMaker\Rutland.PrintFileMaker.Test\bin\Release\PrintFileMakerv21.exe.config
+C:\Users\Timmy Diyaolu\Downloads\PrintFileMaker.v21\PrintFileMaker\Rutland.PrintFileMaker.Test\obj\x86\Release\Rutland.PrintFileMaker.Test.csproj.AssemblyReference.cache
+C:\Users\Timmy Diyaolu\Downloads\PrintFileMaker.v21\PrintFileMaker\Rutland.PrintFileMaker.Test\obj\x86\Release\Rutland.PrintFileMaker.Test.csproj.CoreCompileInputs.cache
+C:\Users\Timmy Diyaolu\Downloads\PrintFileMaker.v21\PrintFileMaker\Rutland.PrintFileMaker.Test\obj\x86\Release\Rutland..C8751CA0.Up2Date
+C:\Users\Timmy Diyaolu\Downloads\PrintFileMaker.v21\PrintFileMaker\Rutland.PrintFileMaker.Test\obj\x86\Release\Rutland.PrintFileMaker.Test.exe
+C:\Users\Timmy Diyaolu\Downloads\PrintFileMaker.v21\PrintFileMaker\Rutland.PrintFileMaker.Test\obj\x86\Release\Rutland.PrintFileMaker.Test.pdb
