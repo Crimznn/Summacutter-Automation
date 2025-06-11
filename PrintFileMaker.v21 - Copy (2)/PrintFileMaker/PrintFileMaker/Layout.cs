@@ -79,23 +79,19 @@ namespace Rutland.PrintFileMaker
                     foreach (DictionaryEntry serialNum in serialNumberSet)
                     {
                         //if serialnumber is blank, set corresponding images to default blank image
-                        if (string.IsNullOrEmpty((serialNum.Value as string).Trim())) 
-                        {                              if (this.FileRefQty == 192) //adjust thirdsheet images 
-                            {                                
-                                //top
-                                string key = string.Format("Variable{0}", Convert.ToString(varNum));
-                                sds.Variables[key] = this.DefaultImage;
-                                //bottom
+                        if (string.IsNullOrEmpty((serialNum.Value as string).Trim()))
+                        {
+                            string key = string.Format("Variable{0}", Convert.ToString(varNum));
+                            sds.Variables[key] = this.DefaultImage;
+
+                            if (this.FileRefQty == 192 && this.TextContentQty == 96)
+                            {
                                 key = string.Format("Variable{0}", Convert.ToString(varNum + 48));
-                                sds.Variables[key] = this.DefaultImage;                                                               
-                            }
-                            else //adjust 5x5 image (-25)
-                            {                                
-                                string key = string.Format("Variable{0}", Convert.ToString(varNum));
                                 sds.Variables[key] = this.DefaultImage;
-                            }                           
-                        }                        //varNum to skip bottoms of 1 - 48
-                        if (varNum == 48 && this.FileRefQty == 192)
+                            }
+                        }
+                        //skip bottom image positions when using 96 text fields
+                        if (varNum == 48 && this.FileRefQty == 192 && this.TextContentQty == 96)
                         {
                             varNum += 48;
                         }
