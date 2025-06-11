@@ -165,8 +165,16 @@ namespace Rutland.PrintFileMaker
         {
             PnlBottomStartPoint = new Point(4, 4);
             PnlTopStartPoint = new Point(4, 4);
+            // populate first 96 image slots
             this.addFilePickerToTop(top, new Range(1, 24), new Range(49, 72));
             this.addFilePickerToBottom(bottom, new Range(25, 48), new Range(73, 96));
+
+            // extend ranges for layouts that support up to 192 images
+            if (this.LayoutType == LayoutType.ThirdSheet)
+            {
+                this.addFilePickerToTop(top, new Range(97, 120), new Range(145, 168));
+                this.addFilePickerToBottom(bottom, new Range(121, 144), new Range(169, 192));
+            }
         }
 
         private void showUniform(Panel top)
@@ -180,7 +188,10 @@ namespace Rutland.PrintFileMaker
             switch (LayoutType)
             {
                 case LayoutType.ThirdSheet:
+                    // first 96 image slots
                     this.addFilePickerToTop(top, new Range(1, 48), new Range(49, 96));
+                    // extend selection to fill remaining variables through 192
+                    this.addFilePickerToTop(top, new Range(97, 144), new Range(145, 192));
                     break;
 
                 case LayoutType.FiveByFive:
